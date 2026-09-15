@@ -5,3 +5,5 @@ playwright-report
 coverage
 .env.local
 .env
+.git
+.env*

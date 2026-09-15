@@ -17,6 +17,13 @@ export interface SavedBooking {
   theatre: string;
 }
 
+/** Holds raw persisted booking values before service-level JSON validation. */
+export interface PersistedBooking extends SavedBooking {
+  seats: string;
+  paymentMethod: 'CARD' | 'UPI';
+  totalPrice: number;
+}
+
 /** Persists bookings with a catalogue-mapping check in one SQLite transaction. */
 export class BookingRepository {
   constructor(private readonly database: Database.Database) {}
@@ -39,5 +46,19 @@ export class BookingRepository {
       return { id: Number(result.lastInsertRowid), movie: selection.movie, theatre: selection.theatre };
     });
     return transaction();
+  }
+
+  /** Finds a booking and its catalogue labels by its persisted identifier. */
+  findById(id: number): PersistedBooking | null {
+    const booking = this.database.prepare(`
+      SELECT bookings.id, movies.title AS movie, theatres.name AS theatre,
+             bookings.seats, bookings.payment_method AS paymentMethod,
+             bookings.total_price AS totalPrice
+      FROM bookings
+      INNER JOIN movies ON movies.id = bookings.movie_id
+      INNER JOIN theatres ON theatres.id = bookings.theatre_id
+      WHERE bookings.id = ?
+    `).get(id) as PersistedBooking | undefined;
+    return booking ?? null;
   }
 }

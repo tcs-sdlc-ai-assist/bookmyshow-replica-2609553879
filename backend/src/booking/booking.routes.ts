@@ -9,5 +9,6 @@ export function createBookingRouter(database: Database.Database): Router {
   const controller = new BookingController(new BookingService(new BookingRepository(database)));
   const router = Router();
   router.post('/bookings', controller.create);
+  router.get('/bookings/:id', controller.getById);
   return router;
 }

@@ -1,0 +1,394 @@
+{
+  "communities": {
+    "0": [
+      "frontend_app_layout",
+      "frontend_app_layout_metadata",
+      "frontend_app_layout_rootlayout",
+      "frontend_app_login_page",
+      "frontend_app_login_page_loginpage",
+      "frontend_app_otp_page",
+      "frontend_app_otp_page_otppage",
+      "frontend_src_api_client",
+      "frontend_src_api_client_apierrorbody",
+      "frontend_src_api_client_apiresponse",
+      "frontend_src_api_client_login",
+      "frontend_src_api_client_request",
+      "frontend_src_api_client_verify",
+      "frontend_src_auth_authforms_test",
+      "frontend_src_auth_authforms_test_mockedlogin",
+      "frontend_src_auth_authforms_test_mockedverify",
+      "frontend_src_auth_authforms_test_push",
+      "frontend_src_auth_authforms_test_renderwithjourney",
+      "frontend_src_auth_loginform",
+      "frontend_src_auth_loginform_loginform",
+      "frontend_src_auth_otpform",
+      "frontend_src_auth_otpform_otpform",
+      "frontend_src_journey_journeyprovider",
+      "frontend_src_journey_journeyprovider_journeyaction",
+      "frontend_src_journey_journeyprovider_journeycontext",
+      "frontend_src_journey_journeyprovider_journeycontextvalue",
+      "frontend_src_journey_journeyprovider_journeyprovider",
+      "frontend_src_journey_journeyprovider_journeyreducer",
+      "frontend_src_journey_journeyprovider_journeystate",
+      "frontend_src_journey_journeyprovider_usejourney"
+    ],
+    "1": [
+      "backend_src_app",
+      "backend_src_app_appconfig",
+      "backend_src_app_createapp",
+      "backend_src_config",
+      "backend_src_config_config",
+      "backend_src_config_environmentschema",
+      "backend_src_config_readconfig",
+      "backend_src_db_database",
+      "backend_src_db_database_createdatabase",
+      "backend_src_db_migrate",
+      "backend_src_db_migrate_migrate",
+      "backend_src_db_migrate_runmigrationcommand",
+      "backend_src_db_seed",
+      "backend_src_db_seed_seed",
+      "backend_src_index",
+      "backend_src_index_start",
+      "backend_src_middleware_context",
+      "backend_src_middleware_context_correlationcontext",
+      "backend_src_middleware_error",
+      "backend_src_middleware_error_errorhandler",
+      "backend_src_middleware_error_notfoundhandler",
+      "backend_test_auth_api_test",
+      "backend_test_auth_api_test_createtemporarydatabase",
+      "backend_test_auth_service_test",
+      "backend_test_auth_service_test_createtemporarydatabase"
+    ],
+    "2": [
+      "backend_package",
+      "backend_package_dependencies",
+      "backend_package_dependencies_better_sqlite3",
+      "backend_package_dependencies_cors",
+      "backend_package_dependencies_dotenv",
+      "backend_package_dependencies_express",
+      "backend_package_dependencies_jsonwebtoken",
+      "backend_package_dependencies_zod",
+      "backend_package_name",
+      "backend_package_private",
+      "backend_package_scripts",
+      "backend_package_scripts_build",
+      "backend_package_scripts_dev",
+      "backend_package_scripts_migrate",
+      "backend_package_scripts_start",
+      "backend_package_scripts_test",
+      "backend_package_version",
+      "better_sqlite3",
+      "cors",
+      "dotenv",
+      "express",
+      "jsonwebtoken",
+      "zod"
+    ],
+    "3": [
+      "backend_package_devdependencies",
+      "backend_package_devdependencies_supertest",
+      "backend_package_devdependencies_ts_node_dev",
+      "backend_package_devdependencies_types_better_sqlite3",
+      "backend_package_devdependencies_types_cors",
+      "backend_package_devdependencies_types_express",
+      "backend_package_devdependencies_types_jsonwebtoken",
+      "backend_package_devdependencies_types_node",
+      "backend_package_devdependencies_types_supertest",
+      "backend_package_devdependencies_vitest",
+      "backend_package_json_types_node",
+      "backend_package_json_vitest",
+      "frontend_package_devdependencies_types_node",
+      "supertest",
+      "ts_node_dev",
+      "types_better_sqlite3",
+      "types_cors",
+      "types_express",
+      "types_jsonwebtoken",
+      "types_supertest"
+    ],
+    "4": [
+      "backend_package_devdependencies_typescript",
+      "backend_package_json_typescript",
+      "frontend_package_devdependencies",
+      "frontend_package_devdependencies_jsdom",
+      "frontend_package_devdependencies_playwright_test",
+      "frontend_package_devdependencies_testing_library_jest_dom",
+      "frontend_package_devdependencies_testing_library_react",
+      "frontend_package_devdependencies_testing_library_user_event",
+      "frontend_package_devdependencies_types_react",
+      "frontend_package_devdependencies_types_react_dom",
+      "frontend_package_devdependencies_typescript",
+      "frontend_package_devdependencies_vitest",
+      "frontend_package_json_vitest",
+      "jsdom",
+      "playwright_test",
+      "testing_library_jest_dom",
+      "testing_library_react",
+      "testing_library_user_event",
+      "types_react",
+      "types_react_dom"
+    ],
+    "5": [
+      "frontend_tsconfig_compileroptions",
+      "frontend_tsconfig_compileroptions_allowjs",
+      "frontend_tsconfig_compileroptions_esmoduleinterop",
+      "frontend_tsconfig_compileroptions_incremental",
+      "frontend_tsconfig_compileroptions_isolatedmodules",
+      "frontend_tsconfig_compileroptions_jsx",
+      "frontend_tsconfig_compileroptions_lib",
+      "frontend_tsconfig_compileroptions_module",
+      "frontend_tsconfig_compileroptions_moduleresolution",
+      "frontend_tsconfig_compileroptions_noemit",
+      "frontend_tsconfig_compileroptions_plugins",
+      "frontend_tsconfig_compileroptions_resolvejsonmodule",
+      "frontend_tsconfig_compileroptions_skiplibcheck",
+      "frontend_tsconfig_compileroptions_strict",
+      "frontend_tsconfig_compileroptions_target",
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_esnext"
+    ],
+    "6": [
+      "frontend_package",
+      "frontend_package_dependencies",
+      "frontend_package_dependencies_next",
+      "frontend_package_dependencies_react",
+      "frontend_package_dependencies_react_dom",
+      "frontend_package_name",
+      "frontend_package_private",
+      "frontend_package_scripts",
+      "frontend_package_scripts_build",
+      "frontend_package_scripts_dev",
+      "frontend_package_scripts_e2e",
+      "frontend_package_scripts_start",
+      "frontend_package_scripts_test",
+      "frontend_package_version",
+      "next",
+      "react",
+      "react_dom"
+    ],
+    "7": [
+      "backend_src_auth_auth_controller",
+      "backend_src_auth_auth_controller_createauthcontroller",
+      "backend_src_auth_auth_controller_credentialsschema",
+      "backend_src_auth_auth_controller_verificationschema",
+      "backend_src_auth_auth_routes",
+      "backend_src_auth_auth_routes_createauthrouter",
+      "backend_src_auth_auth_service",
+      "backend_src_auth_auth_service_authservice",
+      "backend_src_auth_auth_service_authservice_acceptlogin",
+      "backend_src_auth_auth_service_authservice_constructor",
+      "backend_src_auth_auth_service_authservice_verifyotp",
+      "backend_src_auth_auth_service_verificationresult",
+      "backend_src_middleware_error_apierror",
+      "backend_src_middleware_error_apierror_constructor"
+    ],
+    "8": [
+      "engine_memory_progress_summary_authentication_access",
+      "engine_workers_8acf02cce179_scratch_findings_authentication_access_implementation",
+      "plan_authentication_access",
+      "plan_bookmyshow_replica",
+      "plan_discovery_guided_selection",
+      "plan_fixed_otp_verification",
+      "plan_fixed_seat_booking",
+      "plan_payment_persisted_confirmation",
+      "plan_red_white_black_theme",
+      "plan_sqlite_file_persistence",
+      "plan_two_tier_fullstack_typescript",
+      "todos_authentication_access",
+      "todos_discovery_selection",
+      "todos_payment_confirmation"
+    ],
+    "9": [
+      "backend_tsconfig",
+      "backend_tsconfig_exclude",
+      "backend_tsconfig_include",
+      "backend_tsconfig_json_ref_node_modules",
+      "frontend_tsconfig",
+      "frontend_tsconfig_exclude",
+      "frontend_tsconfig_include",
+      "ref_dist",
+      "ref_next_env_d_ts",
+      "ref_next_types_ts",
+      "ref_src_ts",
+      "ref_ts",
+      "ref_tsx"
+    ],
+    "10": [
+      "backend_tsconfig_compileroptions",
+      "backend_tsconfig_compileroptions_downleveliteration",
+      "backend_tsconfig_compileroptions_esmoduleinterop",
+      "backend_tsconfig_compileroptions_module",
+      "backend_tsconfig_compileroptions_moduleresolution",
+      "backend_tsconfig_compileroptions_outdir",
+      "backend_tsconfig_compileroptions_rootdir",
+      "backend_tsconfig_compileroptions_skiplibcheck",
+      "backend_tsconfig_compileroptions_strict",
+      "backend_tsconfig_compileroptions_target",
+      "backend_tsconfig_compileroptions_types",
+      "ref_node",
+      "ref_vitest_globals"
+    ],
+    "11": [
+      "frontend_app_page",
+      "frontend_app_page_homepage"
+    ],
+    "12": [
+      "frontend_next_config",
+      "frontend_next_config_nextconfig"
+    ],
+    "13": [
+      "frontend_next_env_d",
+      "frontend_next_env_d_rationale_4"
+    ],
+    "14": [
+      "backend_vitest_config"
+    ],
+    "15": [
+      "frontend_e2e_auth_spec"
+    ],
+    "16": [
+      "frontend_playwright_config"
+    ],
+    "17": [
+      "frontend_test_setup"
+    ],
+    "18": [
+      "frontend_vitest_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.11494252873563218,
+    "1": 0.2,
+    "2": 0.08695652173913043,
+    "3": 0.1,
+    "4": 0.1,
+    "5": 0.1111111111111111,
+    "6": 0.11764705882352941,
+    "7": 0.21978021978021978,
+    "8": 0.15384615384615385,
+    "9": 0.15384615384615385,
+    "10": 0.15384615384615385,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0
+  },
+  "gods": [
+    {
+      "id": "frontend_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 15
+    },
+    {
+      "id": "backend_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 11
+    },
+    {
+      "id": "backend_src_app_createapp",
+      "label": "createApp()",
+      "degree": 8
+    },
+    {
+      "id": "backend_src_auth_auth_service_authservice",
+      "label": "AuthService",
+      "degree": 8
+    },
+    {
+      "id": "backend_src_db_migrate_migrate",
+      "label": "migrate()",
+      "degree": 8
+    },
+    {
+      "id": "backend_src_db_seed_seed",
+      "label": "seed()",
+      "degree": 7
+    },
+    {
+      "id": "backend_package_scripts",
+      "label": "scripts",
+      "degree": 6
+    },
+    {
+      "id": "frontend_package_scripts",
+      "label": "scripts",
+      "degree": 6
+    },
+    {
+      "id": "backend_src_auth_auth_controller_createauthcontroller",
+      "label": "createAuthController()",
+      "degree": 5
+    },
+    {
+      "id": "backend_src_db_database_createdatabase",
+      "label": "createDatabase()",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "exclude",
+      "target": "node_modules",
+      "source_files": [
+        "frontend/tsconfig.json",
+        "backend/tsconfig.json"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "extends",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "Authentication Access Implementation",
+      "target": "Authentication Access",
+      "source_files": [
+        ".engine/workers/8acf02cce179/scratch/findings.md",
+        "PLAN.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "authentication-access Todo",
+      "target": "Authentication Access",
+      "source_files": [
+        "todos.yaml",
+        "PLAN.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "discovery-selection Todo",
+      "target": "Discovery and Guided Selection",
+      "source_files": [
+        "todos.yaml",
+        "PLAN.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "payment-confirmation Todo",
+      "target": "Payment and Persisted Confirmation",
+      "source_files": [
+        "todos.yaml",
+        "PLAN.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

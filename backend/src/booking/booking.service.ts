@@ -44,4 +44,26 @@ export class BookingService {
       throw new BookingError('BOOKING_NOT_SAVED', 'The booking could not be saved.');
     }
   }
+
+  /** Retrieves a persisted booking as the canonical confirmation payload. */
+  getById(id: number): BookingConfirmation {
+    if (!Number.isSafeInteger(id) || id <= 0) {
+      throw new BookingError('INVALID_BOOKING', 'Booking details are invalid.');
+    }
+    try {
+      const saved = this.repository.findById(id);
+      if (!saved) throw new BookingError('SELECTION_NOT_FOUND', 'The selected booking is unavailable.');
+      const seats = JSON.parse(saved.seats);
+      if (!Array.isArray(seats) || !seats.every((seat): seat is string => typeof seat === 'string')) {
+        throw new Error('Persisted seats are invalid.');
+      }
+      return {
+        confirmationId: `BMS-${saved.id}`,
+        booking: { id: saved.id, movie: saved.movie, theatre: saved.theatre, seats, paymentMethod: saved.paymentMethod, totalPrice: saved.totalPrice }
+      };
+    } catch (error) {
+      if (error instanceof BookingError) throw error;
+      throw new BookingError('BOOKING_NOT_SAVED', 'The booking could not be retrieved.');
+    }
+  }
 }

@@ -54,7 +54,7 @@ describe('authentication API', () => {
     expect(after.count).toBe(before.count);
   });
 
-  it.each([undefined, {}, { mobile: 9 }, ['demo-actor']])('rejects malformed login requests', async (body) => {
+  it.each([undefined, {}, { mobile: '' }, { mobile: 9 }, ['demo-actor']])('rejects malformed login requests', async (body) => {
     const response = await request(app).post('/api/auth/login').send(body);
     expect(response.status).toBe(400);
     expect(response.body.error.code).toBe('INVALID_REQUEST');
@@ -68,7 +68,7 @@ describe('authentication API', () => {
     expect(response.body.data.token.length).toBeGreaterThan(0);
   });
 
-  it.each([{}, { mobile: 'demo-actor' }, { mobile: 1, otp: '1234' }])('rejects malformed verification requests', async (body) => {
+  it.each([{}, { mobile: '', otp: '1234' }, { mobile: 'demo-actor', otp: '' }, { mobile: 'demo-actor' }, { mobile: 1, otp: '1234' }])('rejects malformed verification requests', async (body) => {
     const response = await request(app).post('/api/auth/verify').send(body);
     expect(response.status).toBe(400);
     expect(response.body.error.code).toBe('INVALID_REQUEST');

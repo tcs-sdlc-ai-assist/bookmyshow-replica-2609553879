@@ -45,22 +45,64 @@ export function PaymentFlow() {
     window.setTimeout(submitAfterDelay, 2000);
   };
 
-  return <section className="auth-card" aria-labelledby="payment-title">
-    <p className="kicker">Booking payment</p>
-    <h1 id="payment-title">Choose payment method</h1>
-    <div className="payment-options" role="radiogroup" aria-label="Payment method">
-      <label className="payment-option"><input type="radio" name="paymentMethod" value="CARD" checked={method === 'CARD'} onChange={() => setMethod('CARD')} /> Card</label>
-      <label className="payment-option"><input type="radio" name="paymentMethod" value="UPI" checked={method === 'UPI'} onChange={() => setMethod('UPI')} /> UPI</label>
-    </div>
-    {method === 'CARD' ? <div className="payment-fields">
-      <label htmlFor="card-number">Card Number<input id="card-number" inputMode="numeric" autoComplete="cc-number" /></label>
-      <label htmlFor="expiry-date">Expiry Date<input id="expiry-date" autoComplete="cc-exp" /></label>
-      <label htmlFor="cvv">CVV<input id="cvv" inputMode="numeric" autoComplete="cc-csc" /></label>
-    </div> : <div className="payment-fields">
-      <label htmlFor="upi-id">UPI ID<input id="upi-id" autoComplete="off" /></label>
-      <p className="hint">Example: user@upi</p>
-    </div>}
-    {error && <p className="form-error" role="alert">{error}</p>}
-    <button className="button button-primary" type="button" onClick={pay} disabled={isSubmitting}>Pay ₹{state.totalPrice}</button>
-  </section>;
+  return (
+    <section className="auth-card" aria-labelledby="payment-title">
+      <p className="kicker">Booking payment</p>
+      <h1 id="payment-title">Choose payment method</h1>
+      <div className="payment-options" role="radiogroup" aria-label="Payment method">
+        <label className="payment-option">
+          <input
+            checked={method === 'CARD'}
+            name="paymentMethod"
+            onChange={() => setMethod('CARD')}
+            type="radio"
+            value="CARD"
+          />
+          Card
+        </label>
+        <label className="payment-option">
+          <input
+            checked={method === 'UPI'}
+            name="paymentMethod"
+            onChange={() => setMethod('UPI')}
+            type="radio"
+            value="UPI"
+          />
+          UPI
+        </label>
+      </div>
+      {method === 'CARD' ? (
+        <div className="payment-fields">
+          <label htmlFor="card-number">
+            Card Number
+            <input autoComplete="cc-number" id="card-number" inputMode="numeric" />
+          </label>
+          <label htmlFor="expiry-date">
+            Expiry Date
+            <input autoComplete="cc-exp" id="expiry-date" />
+          </label>
+          <label htmlFor="cvv">
+            CVV
+            <input autoComplete="cc-csc" id="cvv" inputMode="numeric" />
+          </label>
+        </div>
+      ) : (
+        <div className="payment-fields">
+          <label htmlFor="upi-id">
+            UPI ID
+            <input autoComplete="off" id="upi-id" />
+          </label>
+          <p className="hint">Example: user@upi</p>
+        </div>
+      )}
+      {error ? (
+        <p className="form-error" role="alert">
+          {error}
+        </p>
+      ) : null}
+      <button className="button button-primary" disabled={isSubmitting} onClick={pay} type="button">
+        Pay ₹{state.totalPrice}
+      </button>
+    </section>
+  );
 }

@@ -18,5 +18,22 @@ export function SeatSelection() {
     router.push('/payment');
   }
 
-  return <section aria-label="Seat selection"><div className="seat-grid" aria-label="Inert seat grid">{seats.map((seat) => <button aria-label={`Seat ${seat}`} className="seat" key={seat} type="button">{seat}</button>)}</div><div className="selection-summary" aria-live="polite"><p>Selected seats: {state.seats?.join(', ') ?? 'None'}</p><p>Total: {state.totalPrice === null ? 'Not applied' : state.totalPrice}</p></div><button className="button button-primary" onClick={applySeats} type="button">Select Seats</button></section>;
+  return (
+    <section aria-label="Seat selection">
+      <div className="seat-grid" aria-label="Inert seat grid">
+        {seats.map((seat) => (
+          <button aria-label={`Seat ${seat}`} className="seat" key={seat} type="button">
+            {seat}
+          </button>
+        ))}
+      </div>
+      <div className="selection-summary" aria-live="polite">
+        <p>Selected seats: {state.seats?.join(', ') ?? 'None'}</p>
+        <p>Total: {state.totalPrice === null ? 'Not applied' : state.totalPrice}</p>
+      </div>
+      <button className="button button-primary" onClick={applySeats} type="button">
+        Select Seats
+      </button>
+    </section>
+  );
 }

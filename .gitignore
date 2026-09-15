@@ -6,6 +6,8 @@ playwright-report/
 test-results/
 *.db
 *.db-*
+*.sqlite
+*.sqlite-*
 .env
 .env.local
 .env.*.local

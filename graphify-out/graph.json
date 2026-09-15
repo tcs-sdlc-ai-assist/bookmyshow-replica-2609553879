@@ -552,11 +552,27 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_src_booking_booking_controller_bookingschema",
+      "label": "bookingSchema",
+      "file_type": "code",
+      "source_file": "backend/src/booking/booking.controller.ts",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_booking_booking_controller_bookingidschema",
+      "label": "bookingIdSchema",
+      "file_type": "code",
+      "source_file": "backend/src/booking/booking.controller.ts",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_booking_booking_controller_bookingcontroller",
       "label": "BookingController",
       "file_type": "code",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L5",
+      "source_location": "L17",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -566,7 +582,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L6",
+      "source_location": "L18",
       "_callable": true,
       "_origin": "ast"
     },
@@ -575,7 +591,16 @@
       "label": ".create()",
       "file_type": "code",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L9",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_booking_booking_controller_bookingcontroller_getbyid",
+      "label": ".getById()",
+      "file_type": "code",
+      "source_file": "backend/src/booking/booking.controller.ts",
+      "source_location": "L38",
       "_callable": true,
       "_origin": "ast"
     },
@@ -608,11 +633,21 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_src_booking_booking_repository_persistedbooking",
+      "label": "PersistedBooking",
+      "file_type": "code",
+      "source_file": "backend/src/booking/booking.repository.ts",
+      "source_location": "L21",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_booking_booking_repository_bookingrepository",
       "label": "BookingRepository",
       "file_type": "code",
       "source_file": "backend/src/booking/booking.repository.ts",
-      "source_location": "L21",
+      "source_location": "L28",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -622,7 +657,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "backend/src/booking/booking.repository.ts",
-      "source_location": "L22",
+      "source_location": "L29",
       "_callable": true,
       "_origin": "ast"
     },
@@ -631,7 +666,16 @@
       "label": ".create()",
       "file_type": "code",
       "source_file": "backend/src/booking/booking.repository.ts",
-      "source_location": "L25",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_booking_booking_repository_bookingrepository_findbyid",
+      "label": ".findById()",
+      "file_type": "code",
+      "source_file": "backend/src/booking/booking.repository.ts",
+      "source_location": "L52",
       "_callable": true,
       "_origin": "ast"
     },
@@ -724,6 +768,15 @@
       "file_type": "code",
       "source_file": "backend/src/booking/booking.service.ts",
       "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_booking_booking_service_bookingservice_getbyid",
+      "label": ".getById()",
+      "file_type": "code",
+      "source_file": "backend/src/booking/booking.service.ts",
+      "source_location": "L49",
       "_callable": true,
       "_origin": "ast"
     },
@@ -916,7 +969,7 @@
       "label": "runMigrationCommand()",
       "file_type": "code",
       "source_file": "backend/src/db/migrate.ts",
-      "source_location": "L52",
+      "source_location": "L46",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -1075,11 +1128,29 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_test_booking_api_test_bookingcount",
+      "label": "bookingCount()",
+      "file_type": "code",
+      "source_file": "backend/test/booking.api.test.ts",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "backend_test_booking_service_test",
       "label": "booking.service.test.ts",
       "file_type": "code",
       "source_file": "backend/test/booking.service.test.ts",
       "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_test_booking_service_test_bookingcount",
+      "label": "bookingCount()",
+      "file_type": "code",
+      "source_file": "backend/test/booking.service.test.ts",
+      "source_location": "L11",
+      "_callable": true,
       "_origin": "ast"
     },
     {
@@ -1305,6 +1376,33 @@
       "community": 14
     },
     {
+      "id": "frontend_app_confirmation_id_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/app/confirmation/[id]/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_app_confirmation_id_page_confirmationpageprops",
+      "label": "ConfirmationPageProps",
+      "file_type": "code",
+      "source_file": "frontend/app/confirmation/[id]/page.tsx",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_app_confirmation_id_page_confirmationbyidpage",
+      "label": "ConfirmationByIdPage()",
+      "file_type": "code",
+      "source_file": "frontend/app/confirmation/[id]/page.tsx",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_app_confirmation_page",
       "label": "page.tsx",
       "file_type": "code",
@@ -1501,6 +1599,15 @@
       "community": 15
     },
     {
+      "id": "frontend_e2e_auth_spec_capturebrowsererrors",
+      "label": "captureBrowserErrors()",
+      "file_type": "code",
+      "source_file": "frontend/e2e/auth.spec.ts",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_e2e_booking_spec",
       "label": "booking.spec.ts",
       "file_type": "code",
@@ -1509,11 +1616,47 @@
       "_origin": "ast"
     },
     {
+      "id": "frontend_e2e_booking_spec_capturebrowsererrors",
+      "label": "captureBrowserErrors()",
+      "file_type": "code",
+      "source_file": "frontend/e2e/booking.spec.ts",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_booking_spec_reachpayment",
+      "label": "reachPayment()",
+      "file_type": "code",
+      "source_file": "frontend/e2e/booking.spec.ts",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_e2e_discovery_spec",
       "label": "discovery.spec.ts",
       "file_type": "code",
       "source_file": "frontend/e2e/discovery.spec.ts",
       "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_discovery_spec_capturebrowsererrors",
+      "label": "captureBrowserErrors()",
+      "file_type": "code",
+      "source_file": "frontend/e2e/discovery.spec.ts",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_discovery_spec_accessdashboard",
+      "label": "accessDashboard()",
+      "file_type": "code",
+      "source_file": "frontend/e2e/discovery.spec.ts",
+      "source_location": "L14",
+      "_callable": true,
       "_origin": "ast"
     },
     {
@@ -2087,7 +2230,7 @@
       "label": "push",
       "file_type": "code",
       "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "_origin": "ast"
     },
     {
@@ -2095,16 +2238,7 @@
       "label": "mockedGet",
       "file_type": "code",
       "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
-      "source_location": "L14",
-      "_origin": "ast"
-    },
-    {
-      "id": "frontend_src_catalog_catalogselection_test_stateprobe",
-      "label": "StateProbe()",
-      "file_type": "code",
-      "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
       "source_location": "L16",
-      "_callable": true,
       "_origin": "ast"
     },
     {
@@ -2112,7 +2246,7 @@
       "label": "renderJourney()",
       "file_type": "code",
       "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2156,7 +2290,7 @@
       "label": "TheatreList()",
       "file_type": "code",
       "source_file": "frontend/src/catalog/TheatreList.tsx",
-      "source_location": "L11",
+      "source_location": "L14",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2311,6 +2445,14 @@
       "file_type": "code",
       "source_file": "frontend/src/payment/PaymentFlow.test.tsx",
       "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_payment_paymentflow_test_journeystate",
+      "label": "journeyState",
+      "file_type": "code",
+      "source_file": "frontend/src/payment/PaymentFlow.test.tsx",
+      "source_location": "L13",
       "_origin": "ast"
     },
     {
@@ -3465,7 +3607,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3476,7 +3618,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3487,7 +3629,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3498,7 +3640,27 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L2",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_controller",
+      "target": "backend_src_booking_booking_controller_bookingschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/booking/booking.controller.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_controller",
+      "target": "backend_src_booking_booking_controller_bookingidschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/booking/booking.controller.ts",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3508,7 +3670,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L5",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3518,7 +3680,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L6",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3528,7 +3690,17 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L9",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_controller_bookingcontroller",
+      "target": "backend_src_booking_booking_controller_bookingcontroller_getbyid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/booking/booking.controller.ts",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3554,11 +3726,21 @@
     },
     {
       "source": "backend_src_booking_booking_repository",
-      "target": "backend_src_booking_booking_repository_bookingrepository",
+      "target": "backend_src_booking_booking_repository_persistedbooking",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.repository.ts",
       "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_repository",
+      "target": "backend_src_booking_booking_repository_bookingrepository",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/booking/booking.repository.ts",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3568,7 +3750,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.repository.ts",
-      "source_location": "L22",
+      "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3578,7 +3760,17 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.repository.ts",
-      "source_location": "L25",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_repository_bookingrepository",
+      "target": "backend_src_booking_booking_repository_bookingrepository_findbyid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/booking/booking.repository.ts",
+      "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3758,6 +3950,16 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.service.ts",
       "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_service_bookingservice",
+      "target": "backend_src_booking_booking_service_bookingservice_getbyid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/booking/booking.service.ts",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4039,7 +4241,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/db/migrate.ts",
-      "source_location": "L52",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4050,7 +4252,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/db/migrate.ts",
-      "source_location": "L54",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4431,6 +4633,16 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_test_booking_api_test",
+      "target": "backend_test_booking_api_test_bookingcount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/booking.api.test.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_test_booking_service_test",
       "target": "backend_src_booking_booking_repository",
       "relation": "imports_from",
@@ -4504,6 +4716,16 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/test/booking.service.test.ts",
       "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_booking_service_test",
+      "target": "backend_test_booking_service_test_bookingcount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/booking.service.test.ts",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4704,6 +4926,28 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_test_journey_integration_test",
+      "target": "backend_src_db_seed",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/journey.integration.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_journey_integration_test",
+      "target": "backend_src_db_seed_seed",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/journey.integration.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tsconfig",
       "target": "backend_tsconfig_compileroptions",
       "relation": "contains",
@@ -4886,6 +5130,59 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_confirmation_id_page",
+      "target": "frontend_src_api_client",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/confirmation/[id]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_confirmation_id_page",
+      "target": "frontend_src_api_client_get",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/confirmation/[id]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_confirmation_id_page",
+      "target": "frontend_src_api_client_bookingconfirmationresponse",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/confirmation/[id]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_confirmation_id_page",
+      "target": "frontend_app_confirmation_id_page_confirmationpageprops",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/confirmation/[id]/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_confirmation_id_page",
+      "target": "frontend_app_confirmation_id_page_confirmationbyidpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/confirmation/[id]/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
       "_origin": "ast"
     },
     {
@@ -5193,6 +5490,56 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/app/theatres/page.tsx",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_auth_spec",
+      "target": "frontend_e2e_auth_spec_capturebrowsererrors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/auth.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_booking_spec",
+      "target": "frontend_e2e_booking_spec_capturebrowsererrors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/booking.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_booking_spec",
+      "target": "frontend_e2e_booking_spec_reachpayment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/booking.spec.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_discovery_spec",
+      "target": "frontend_e2e_discovery_spec_capturebrowsererrors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/discovery.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_discovery_spec",
+      "target": "frontend_e2e_discovery_spec_accessdashboard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/discovery.spec.ts",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6005,17 +6352,6 @@
     },
     {
       "source": "frontend_src_catalog_catalogselection_test",
-      "target": "frontend_src_journey_journeyprovider_usejourney",
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "frontend_src_catalog_catalogselection_test",
       "target": "frontend_src_catalog_moviecatalog",
       "relation": "imports_from",
       "context": "import",
@@ -6086,23 +6422,13 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "frontend_src_catalog_catalogselection_test",
       "target": "frontend_src_catalog_catalogselection_test_mockedget",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "frontend_src_catalog_catalogselection_test",
-      "target": "frontend_src_catalog_catalogselection_test_stateprobe",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
@@ -6116,7 +6442,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6256,7 +6582,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/catalog/TheatreList.tsx",
-      "source_location": "L11",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6430,6 +6756,16 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/payment/PaymentFlow.test.tsx",
       "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_payment_paymentflow_test",
+      "target": "frontend_src_payment_paymentflow_test_journeystate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/payment/PaymentFlow.test.tsx",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6815,7 +7151,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/db/migrate.ts",
-      "source_location": "L53",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6914,7 +7250,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/test/catalog.api.test.ts",
-      "source_location": "L12",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6925,7 +7261,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/test/catalog.api.test.ts",
-      "source_location": "L12",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6936,7 +7272,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/test/catalog.repository.test.ts",
-      "source_location": "L11",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6947,17 +7283,6 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/test/catalog.repository.test.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "frontend_src_catalog_catalogselection_test_stateprobe",
-      "target": "frontend_src_journey_journeyprovider_usejourney",
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
@@ -6969,7 +7294,18 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L6",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_repository_persistedbooking",
+      "target": "backend_src_booking_booking_repository_savedbooking",
+      "relation": "inherits",
+      "context": "type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/booking/booking.repository.ts",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7002,7 +7338,7 @@
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/catalog/TheatreList.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7014,7 +7350,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/src/app.ts",
-      "source_location": "L22",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7026,7 +7362,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/app.ts",
-      "source_location": "L26",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7038,7 +7374,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/app.ts",
-      "source_location": "L27",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7050,7 +7386,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/app.ts",
-      "source_location": "L28",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7062,7 +7398,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/src/app.ts",
-      "source_location": "L29",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7074,7 +7410,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/src/app.ts",
-      "source_location": "L30",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7206,7 +7542,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "frontend/src/catalog/CatalogSelection.test.tsx",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7230,7 +7566,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/catalog/TheatreList.tsx",
-      "source_location": "L13",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7302,7 +7638,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/booking/booking.controller.ts",
-      "source_location": "L22",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_controller_bookingcontroller_getbyid",
+      "target": "backend_src_booking_booking_service_bookingservice_getbyid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/booking/booking.controller.ts",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7317,13 +7665,38 @@
       "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_service_bookingservice_getbyid",
+      "target": "backend_src_booking_booking_repository_bookingrepository_findbyid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/booking/booking.service.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_booking_booking_repository_bookingrepository",
+      "target": "backend_src_booking_booking_service_bookingservice_constructor",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/booking/booking.service.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_booking_booking_service_bookingservice_constructor",
+      "_tgt": "backend_src_booking_booking_repository_bookingrepository"
     }
   ],
   "metadata": {
-    "built_at": "2026-09-15T11:02:23.969709+00:00",
+    "built_at": "2026-09-15T12:01:56.969751+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T011GSU2iRpR9000515092609553879\\developer",
     "force": true,
-    "files_scanned": 61
+    "files_scanned": 62
   }
 }

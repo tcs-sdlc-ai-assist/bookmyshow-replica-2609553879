@@ -4,6 +4,8 @@ import express, { type Express, type Request, type Response } from 'express';
 import { createAuthRouter } from './auth/auth.routes';
 import { AuthService } from './auth/auth.service';
 import { config, type readConfig } from './config';
+import { CatalogRepository } from './catalog/catalog.repository';
+import { createCatalogRouter } from './catalog/catalog.routes';
 import { correlationContext } from './middleware/context';
 import { errorHandler, notFoundHandler } from './middleware/error';
 
@@ -21,6 +23,7 @@ export function createApp(database: Database.Database, runtimeConfig: AppConfig 
     response.status(200).json({ data: { status: 'ok' } });
   });
   app.use('/api/auth', createAuthRouter(authService));
+  app.use('/api', createCatalogRouter(new CatalogRepository(database)));
   app.use(notFoundHandler);
   app.use(errorHandler);
   return app;

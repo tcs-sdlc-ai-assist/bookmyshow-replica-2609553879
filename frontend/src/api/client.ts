@@ -24,6 +24,16 @@ async function request<T>(path: string, body: Record<string, string>): Promise<T
   return payload.data;
 }
 
+/** Gets an API resource and returns its data payload or a client-safe message. */
+export async function get<T>(path: string): Promise<T> {
+  const response = await fetch(`${apiBaseUrl}${path}`);
+  const payload = (await response.json()) as ApiResponse<T> & ApiErrorBody;
+  if (!response.ok) {
+    throw new Error(payload.error?.message ?? 'Unable to load this data.');
+  }
+  return payload.data;
+}
+
 /** Accepts a mobile identifier before OTP entry. */
 export function login(mobile: string): Promise<{ accepted: true; mobile: string }> {
   return request('/api/auth/login', { mobile });

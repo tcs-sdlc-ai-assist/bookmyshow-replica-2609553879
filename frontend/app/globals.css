@@ -37,5 +37,22 @@ h1 { max-width: 13ch; margin: 0; font-family: 'Space Grotesk', sans-serif; font-
 .form-error { margin: 0; color: var(--red-dark); font-weight: 700; line-height: 1.5; }
 .hint { margin: 0.5rem 0 0; color: var(--muted); font-size: 0.8rem; }
 
+.catalog-shell { min-height: 100vh; padding: clamp(1.5rem, 5vw, 4rem); }
+.catalog-header { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; border-bottom: 2px solid var(--ink); padding-bottom: 1rem; }
+.catalog-header p { margin: 0; color: var(--muted); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.catalog-title { margin: clamp(2rem, 6vw, 5rem) 0 2rem; max-width: 12ch; }
+.catalog-grid, .seat-grid { display: grid; gap: 1px; background: var(--ink); border: 2px solid var(--ink); }
+.catalog-grid { grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.catalog-item { display: grid; gap: 1.5rem; min-height: 15rem; padding: 1.25rem; background: #fff; text-align: left; }
+.catalog-item h2 { margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 2rem; letter-spacing: -0.06em; }
+.catalog-item p { margin: 0; color: var(--muted); line-height: 1.5; }
+.catalog-item .button { align-self: end; width: 100%; }
+.visual-placeholder { display: grid; place-items: center; aspect-ratio: 16 / 8; background: var(--ink); color: #fff; font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 700; }
+.status-panel { border: 2px solid var(--ink); padding: 1rem; background: #fff; }
+.seat-grid { grid-template-columns: repeat(6, minmax(2.5rem, 1fr)); max-width: 30rem; }
+.seat { min-height: 3rem; border: 0; background: #fff; color: var(--ink); cursor: default; }
+.seat:focus-visible, .button:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
+.selection-summary { display: grid; gap: 0.5rem; margin: 2rem 0; padding: 1rem; border-left: 0.9rem solid var(--red); background: #fff; }
+.selection-summary p { margin: 0; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.01ms !important; } }
 @media (max-width: 38rem) { .landing-panel, .auth-card { padding: 2rem; box-shadow: 6px 6px 0 var(--ink); } h1 { font-size: clamp(2.25rem, 13vw, 3.75rem); } }

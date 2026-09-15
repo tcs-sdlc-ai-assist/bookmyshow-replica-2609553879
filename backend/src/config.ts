@@ -11,7 +11,12 @@ const environmentSchema = z.object({
 });
 
 /** Reads and validates application configuration at startup. */
-export function readConfig(environment: NodeJS.ProcessEnv = process.env) {
+export function readConfig(environment: NodeJS.ProcessEnv = {
+  PORT: process.env.PORT,
+  DATABASE_PATH: process.env.DATABASE_PATH,
+  TOKEN_SECRET: process.env.TOKEN_SECRET,
+  CORS_ORIGIN: process.env.CORS_ORIGIN
+}) {
   return environmentSchema.parse(environment);
 }
 

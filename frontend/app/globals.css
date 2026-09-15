@@ -54,5 +54,13 @@ h1 { max-width: 13ch; margin: 0; font-family: 'Space Grotesk', sans-serif; font-
 .seat:focus-visible, .button:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
 .selection-summary { display: grid; gap: 0.5rem; margin: 2rem 0; padding: 1rem; border-left: 0.9rem solid var(--red); background: #fff; }
 .selection-summary p { margin: 0; }
+.payment-options { display: grid; gap: 0.75rem; margin: 1.5rem 0; }
+.payment-option { display: flex; gap: 0.6rem; align-items: center; border: 2px solid var(--ink); padding: 0.85rem; background: #fff; font-weight: 700; }
+.payment-option:has(input:checked) { border-color: var(--red); box-shadow: 4px 4px 0 var(--red); }
+.payment-fields { display: grid; gap: 0.75rem; margin: 1rem 0 1.5rem; padding: 1rem; border: 2px solid var(--ink); background: #fff; }
+.payment-fields label { display: grid; gap: 0.4rem; font-weight: 700; }
+.payment-fields input { min-height: 3.2rem; border: 2px solid var(--ink); padding: 0.75rem; background: #fff; }
+.processing-copy { font-size: 1rem; font-weight: 700; }
+.confirmation-id { color: var(--red); font-size: 1rem; font-weight: 700; letter-spacing: 0.06em; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.01ms !important; } }
 @media (max-width: 38rem) { .landing-panel, .auth-card { padding: 2rem; box-shadow: 6px 6px 0 var(--ink); } h1 { font-size: clamp(2.25rem, 13vw, 3.75rem); } }

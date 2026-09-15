@@ -15,6 +15,23 @@ export interface Theatre {
 }
 
 /** Holds the user journey fields needed by authentication and later booking selections. */
+/** Describes the payment option accepted by the booking API. */
+export type PaymentMethod = 'CARD' | 'UPI';
+
+/** Describes the canonical booking confirmation returned by the API. */
+export interface BookingConfirmation {
+  confirmationId: string;
+  booking: {
+    id: number;
+    movie: string;
+    theatre: string;
+    seats: string[];
+    paymentMethod: PaymentMethod;
+    totalPrice: number;
+  };
+}
+
+/** Holds the user journey fields needed by authentication and booking confirmation. */
 export interface JourneyState {
   mobile: string;
   verificationToken: string | null;
@@ -22,7 +39,8 @@ export interface JourneyState {
   theatre: Theatre | null;
   seats: string[] | null;
   totalPrice: number | null;
-  bookingId?: number;
+  paymentMethod: PaymentMethod | null;
+  confirmation: BookingConfirmation | null;
 }
 
 type JourneyAction =
@@ -31,7 +49,8 @@ type JourneyAction =
   | { type: 'setMovie'; movie: Movie }
   | { type: 'setTheatre'; theatre: Theatre }
   | { type: 'setSeats'; seats: string[]; totalPrice: number }
-  | { type: 'setBooking'; bookingId?: number };
+  | { type: 'setPaymentMethod'; paymentMethod: PaymentMethod }
+  | { type: 'setConfirmation'; confirmation: BookingConfirmation };
 
 interface JourneyContextValue {
   state: JourneyState;
@@ -48,13 +67,15 @@ function journeyReducer(state: JourneyState, action: JourneyAction): JourneyStat
     case 'setVerificationToken':
       return { ...state, verificationToken: action.token };
     case 'setMovie':
-      return { ...state, movie: action.movie, theatre: null, seats: null, totalPrice: null };
+      return { ...state, movie: action.movie, theatre: null, seats: null, totalPrice: null, paymentMethod: null, confirmation: null };
     case 'setTheatre':
-      return { ...state, theatre: action.theatre, seats: null, totalPrice: null };
+      return { ...state, theatre: action.theatre, seats: null, totalPrice: null, paymentMethod: null, confirmation: null };
     case 'setSeats':
-      return { ...state, seats: action.seats, totalPrice: action.totalPrice };
-    case 'setBooking':
-      return { ...state, bookingId: action.bookingId };
+      return { ...state, seats: action.seats, totalPrice: action.totalPrice, paymentMethod: null, confirmation: null };
+    case 'setPaymentMethod':
+      return { ...state, paymentMethod: action.paymentMethod };
+    case 'setConfirmation':
+      return { ...state, confirmation: action.confirmation };
   }
 }
 
@@ -66,7 +87,9 @@ export function JourneyProvider({ children }: { children: ReactNode }) {
     movie: null,
     theatre: null,
     seats: null,
-    totalPrice: null
+    totalPrice: null,
+    paymentMethod: null,
+    confirmation: null
   });
   return <JourneyContext.Provider value={{ state, dispatch }}>{children}</JourneyContext.Provider>;
 }

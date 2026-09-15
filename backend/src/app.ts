@@ -6,6 +6,7 @@ import { AuthService } from './auth/auth.service';
 import { config, type readConfig } from './config';
 import { CatalogRepository } from './catalog/catalog.repository';
 import { createCatalogRouter } from './catalog/catalog.routes';
+import { createBookingRouter } from './booking/booking.routes';
 import { correlationContext } from './middleware/context';
 import { errorHandler, notFoundHandler } from './middleware/error';
 
@@ -24,6 +25,7 @@ export function createApp(database: Database.Database, runtimeConfig: AppConfig 
   });
   app.use('/api/auth', createAuthRouter(authService));
   app.use('/api', createCatalogRouter(new CatalogRepository(database)));
+  app.use('/api', createBookingRouter(database));
   app.use(notFoundHandler);
   app.use(errorHandler);
   return app;
